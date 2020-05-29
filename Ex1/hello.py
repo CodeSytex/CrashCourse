@@ -1,8 +1,6 @@
-print('Hello')
-a = 1
-b = 2
-print(a + b)
+def greet_user(first_name,last_name, age = 25):
+    # Display a simple greeting
+   return (f"hello!{first_name.title()} {last_name.title()}, {age}")
 
-first_name = "Seb"
-last_name = "Villoz"
-full_name = f"{first_name} {last_name}"
+full_name = greet_user('villoz', 'seb',32)
+print(full_name)
